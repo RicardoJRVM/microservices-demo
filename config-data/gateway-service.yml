@@ -20,7 +20,7 @@ spring:
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=user/**
+            - Path=/**
         - id: car-service
           uri: lb://car-service
           predicates:
